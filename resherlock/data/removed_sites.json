@@ -1,0 +1,24 @@
+[
+  {
+      "name": "TikTok",
+      "usersite": "https://www.tiktok.com/@{}",
+      "mainsite": "https://tiktok.com/"
+  },
+  {
+      "name": "Tripadvisor",
+      "usersite": "https://www.tripadvisor.com/Profile/{}",
+      "mainsite": "https://www.tripadvisor.com/"
+  },
+  {
+      "name": "Hanime",
+      "usersite": "https://hanime.tv/channels/{}",
+      "mainsite": "https://hanime.tv/",
+      "NSFW": "True"
+  },
+  {
+      "name": "Furaffinity",
+      "usersite": "https://www.furaffinity.net/user/{}/",
+      "mainsite": "https://www.furaffinity.net/",
+      "NSFW": "False"
+  }
+]

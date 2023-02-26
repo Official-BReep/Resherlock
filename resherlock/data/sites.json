@@ -1,0 +1,241 @@
+{
+    "sites": [
+        {
+            "name": "3DNEWS",
+            "usersite": "http://forum.3dnews.ru/member.php?username={}",
+            "mainsite": "http://forum.3dnews.ru/index.php",
+            "NSFW": "False"
+        },
+        {
+            "name": "Amazon",
+            "usersite": "https://www.amazon.de/shop/{}",
+            "mainsite": "https://www.amazon.de/",
+            "NSFW": "False"
+        },
+        {
+            "name": "AniList",
+            "usersite": "https://anilist.co/user/{}/",
+            "mainsite": "https://anilist.co/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Aniworld",
+            "usersite": "https://aniworld.to/user/profil/{}",
+            "mainsite": "https://aniworld.to/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Auth0 blog",
+            "usersite": "https://auth0.com/blog/authors/{}/",
+            "mainsite": "https://auth0.com/blog/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Behance",
+            "usersite": "https://www.behance.net/{}",
+            "mainsite": "https://www.behance.net/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Booth",
+            "usersite": "https://{}.booth.pm/",
+            "mainsite": "https://booth.pm/en",
+            "NSFW": "False"
+        },
+        {
+            "name": "Chess.com",
+            "usersite": "https://www.chess.com/member/{}",
+            "mainsite": "https://www.chess.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Codeberg",
+            "usersite": "https://codeberg.org/{}",
+            "mainsite": "https://codeberg.org/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Codechef",
+            "usersite": "https://www.codechef.com/users/{}",
+            "mainsite": "https://www.codechef.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Codewars",
+            "usersite": "https://www.codewars.com/users/{}",
+            "mainsite": "https://www.codewars.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "DeviantArt",
+            "usersite": "https://www.deviantart.com/{}",
+            "mainsite": "https://www.deviantart.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Drupal",
+            "usersite": "https://www.drupal.org/u/{}",
+            "mainsite": "https://www.drupal.org/",
+            "NSFW": "False"
+        },
+        {
+            "name": "E-Hentai",
+            "usersite": "https://e-hentai.org/uploader/{}",
+            "mainsite": "https://e-hentai.org/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Freepik",
+            "usersite": "https://www.freepik.com/author/{}",
+            "mainsite": "https://www.freepik.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Github",
+            "usersite": "https://github.com/{}",
+            "mainsite": "https://github.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "GuteFrage",
+            "usersite": "https://www.gutefrage.net/nutzer/{}",
+            "mainsite": "https://www.gutefrage.net/",
+            "NSFW": "False"
+        },
+        {
+            "name": "HENTAIHAVEN",
+            "usersite": "https://hentaihaven.xxx/channel/{}/",
+            "mainsite": "https://hentaihaven.xxx/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Imgur",
+            "usersite": "https://imgur.com/user/{}",
+            "mainsite": "https://imgur.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Instagram",
+            "usersite": "https://www.instagram.com/{}/",
+            "mainsite": "https://www.instagram.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "LinkTree",
+            "usersite": "https://linktr.ee/{}",
+            "mainsite": "https://linktr.ee/",
+            "NSFW": "False"
+        },
+        {
+            "name": "OnlyFans",
+            "usersite": "https://onlyfans.com/{}",
+            "mainsite": "https://onlyfans.com/",
+            "NSFW": "True"
+        },
+        {
+            "name": "PSNProfiles",
+            "usersite": "https://psnprofiles.com/{}",
+            "mainsite": "https://psnprofiles.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Patron",
+            "usersite": "https://www.patreon.com/{}",
+            "mainsite": "https://www.patreon.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Pinterest",
+            "usersite": "https://www.pinterest.de/{}/",
+            "mainsite": "https://www.pinterest.de/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Pornhub",
+            "modelsite": "https://de.pornhub.com/model/{}",
+            "usersite": "https://de.pornhub.com/users/{}",
+            "mainsite": "https://de.pornhub.com/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Pypi",
+            "usersite": "https://pypi.org/user/{}/",
+            "mainsite": "https://pypi.org/",
+            "NSFW": "False"
+        },
+        {
+            "name": "REDTUBE",
+            "modelsite": "https://de.redtube.com/pornstar/{}",
+            "usersite": "https://de.redtube.com/users/{}",
+            "mainsite": "https://de.redtube.com/",
+            "NSFW": "True"
+        },
+        {
+            "name": "RULE34VIDEO",
+            "usersite": "https://rule34video.com/models/{}/",
+            "mainsite": "https://rule34video.com/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Reddit",
+            "usersite": "https://www.reddit.com/user/{}/",
+            "mainsite": "https://www.reddit.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Rule 34",
+            "usersite": "https://rule34.paheal.net/user/{}",
+            "mainsite": "https://rule34.paheal.net/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Rule 34.xxx",
+            "usersite": "https://rule34.xxx/index.php?page=account&s=profile&uname={}",
+            "mainsite": "https://rule34.xxx/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Spotify",
+            "usersite": "https://open.spotify.com/user/{}",
+            "mainsite": "https://open.spotify.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Steam Community",
+            "usersite": "https://steamcommunity.com/id/{}",
+            "groupsite": "https://steamcommunity.com/groups/{}",
+            "mainsite": "https://steamcommunity.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Tumblr",
+            "usersite": "https://www.tumblr.com/{}",
+            "mainsite": "https://www.tumblr.com/explore/today",
+            "NSFW": "False"
+        },
+        {
+            "name": "Twitch",
+            "usersite": "https://www.twitch.tv/{}",
+            "mainsite": "https://www.twitch.tv/",
+            "NSFW": "False"
+        },
+        {
+            "name": "Twitter",
+            "usersite": "https://twitter.com/{}",
+            "mainsite": "https://twitter.com/home",
+            "NSFW": "False"
+        },
+        {
+            "name": "YouPorn",
+            "usersite": "https://www.youporn.com/pornstar/{}/",
+            "mainsite": "https://www.youporn.com/",
+            "NSFW": "True"
+        },
+        {
+            "name": "Youtube",
+            "usersite": "https://www.youtube.com/@{}",
+            "mainsite": "https://www.youtube.com/",
+            "NSFW": "False"
+        }
+    ]
+}
