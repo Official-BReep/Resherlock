@@ -151,6 +151,12 @@
             "NSFW": "False"
         },
         {
+            "name": "PayPal",
+            "usersite": "https://www.paypal.me/{}",
+            "mainsite": "https://www.paypal.com/de/home",
+            "NSFW": "False"
+        },
+        {
             "name": "Pinterest",
             "usersite": "https://www.pinterest.de/{}/",
             "mainsite": "https://www.pinterest.de/",

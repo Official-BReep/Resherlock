@@ -17,11 +17,14 @@ class ReSherlock:
             return json.loads(data.read())
 
     def test(self, url):
-        response = httpx.get(url)
-        if "codechef" in url:
-            if "The username specified does not exist in our database" in str(response.content):
-                return False
-        return response.status_code, response.is_success  # To print http response code
+        try:
+            response = httpx.get(url)
+            if "codechef" in url:
+                if "The username specified does not exist in our database" in str(response.content):
+                    return False
+            return response.status_code  # To print http response code
+        except:
+            return False
 
 
     def run(self):
@@ -29,7 +32,7 @@ class ReSherlock:
             for site in self.data['sites']:
                 print(f"Checking {site['name']}...")
                 check = str(site['usersite']).format(user)
-                status, success = self.test(check)
+                status = self.test(check)
                 if self.settings.print_all:
                     if self.settings.nsfw:
                         self.all.append(f"{site['name']}:  \t{check}(Status code: {status}{',NSFW' if site['NSFW']=='True' else ''})")
@@ -37,7 +40,7 @@ class ReSherlock:
                         if site['NSFW'] == "False":
                             self.all.append(f"{site['name']}:  \t{check}(Status code: {status})")
                 else:
-                    if success:
+                    if status==200:
                         if not self.settings.nsfw:
                             if site['NSFW'] == "False":
                                 self.output.append(f"{site['name']}:  \t{check}")
