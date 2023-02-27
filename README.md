@@ -51,7 +51,7 @@
 
 ## Installation and Usage
 
-1. Install [Git](https://git-scm.com/downloads)
+1. Install [Git](https://git-scm.com/downloads) and [Python3](https://www.python.org/downloads/)
 
 2. Open cmd and type:
 
