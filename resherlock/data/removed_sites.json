@@ -20,5 +20,11 @@
       "usersite": "https://www.furaffinity.net/user/{}/",
       "mainsite": "https://www.furaffinity.net/",
       "NSFW": "False"
+  },
+  {
+      "name": "Facebook",
+      "usersite": "https://www.facebook.com/{}",
+      "mainsite": "https://www.facebook.com/",
+      "NSFW": "False"
   }
 ]

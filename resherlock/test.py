@@ -1,4 +1,4 @@
 import httpx
 
-r = httpx.get("https://de.wikipedia.org/wiki/Benutzer:GregorBungensheim")
+r = httpx.get("https://www.paypal.me/Lucycat")
 print(r)

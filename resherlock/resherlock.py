@@ -17,14 +17,11 @@ class ReSherlock:
             return json.loads(data.read())
 
     def test(self, url):
-        try:
             response = httpx.get(url)
             if "codechef" in url:
                 if "The username specified does not exist in our database" in str(response.content):
                     return False
             return response.status_code  # To print http response code
-        except:
-            return False
 
 
     def run(self):

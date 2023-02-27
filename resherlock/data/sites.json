@@ -85,9 +85,9 @@
             "NSFW": "True"
         },
         {
-            "name": "Facebook",
-            "usersite": "https://www.facebook.com/{}",
-            "mainsite": "https://www.facebook.com/",
+            "name": "Ebay",
+            "usersite": "https://www.ebay.de/str/{}",
+            "mainsite": "https://www.ebay.de/",
             "NSFW": "False"
         },
         {
@@ -154,6 +154,12 @@
             "name": "Patron",
             "usersite": "https://www.patreon.com/{}",
             "mainsite": "https://www.patreon.com/",
+            "NSFW": "False"
+        },
+        {
+            "name": "PayPal",
+            "usersite": "https://www.paypal.me/{}",
+            "mainsite": "https://www.paypal.com/de/home",
             "NSFW": "False"
         },
         {
@@ -241,6 +247,12 @@
             "name": "Twitter",
             "usersite": "https://twitter.com/{}",
             "mainsite": "https://twitter.com/home",
+            "NSFW": "False"
+        },
+        {
+            "name": "Wikipedia",
+            "usersite": "https://de.wikipedia.org/wiki/Benutzer:{}",
+            "mainsite": "https://de.wikipedia.org/",
             "NSFW": "False"
         },
         {
