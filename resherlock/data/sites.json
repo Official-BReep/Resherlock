@@ -85,9 +85,9 @@
             "NSFW": "True"
         },
         {
-            "name": "Ebay",
-            "usersite": "https://www.ebay.de/str/{}",
-            "mainsite": "https://www.ebay.de/",
+            "name": "Facebook",
+            "usersite": "https://www.facebook.com/{}",
+            "mainsite": "https://www.facebook.com/",
             "NSFW": "False"
         },
         {
@@ -133,6 +133,12 @@
             "NSFW": "False"
         },
         {
+            "name": "NameMC",
+            "usersite": "https://de.namemc.com/profile/{}",
+            "mainsite": "https://de.namemc.com/",
+            "NSFW": "False"
+        },
+        {
             "name": "OnlyFans",
             "usersite": "https://onlyfans.com/{}",
             "mainsite": "https://onlyfans.com/",
@@ -148,12 +154,6 @@
             "name": "Patron",
             "usersite": "https://www.patreon.com/{}",
             "mainsite": "https://www.patreon.com/",
-            "NSFW": "False"
-        },
-        {
-            "name": "PayPal",
-            "usersite": "https://www.paypal.me/{}",
-            "mainsite": "https://www.paypal.com/de/home",
             "NSFW": "False"
         },
         {
@@ -220,6 +220,12 @@
             "NSFW": "False"
         },
         {
+            "name": "Telegram",
+            "usersite": "https://t.me/{}",
+            "mainsite": "https://telegram.org/",
+            "NSFW": "False"
+        },
+        {
             "name": "Tumblr",
             "usersite": "https://www.tumblr.com/{}",
             "mainsite": "https://www.tumblr.com/explore/today",
@@ -235,12 +241,6 @@
             "name": "Twitter",
             "usersite": "https://twitter.com/{}",
             "mainsite": "https://twitter.com/home",
-            "NSFW": "False"
-        },
-        {
-            "name": "Wikipedia",
-            "usersite": "https://de.wikipedia.org/wiki/Benutzer:{}",
-            "mainsite": "https://de.wikipedia.org/",
             "NSFW": "False"
         },
         {
