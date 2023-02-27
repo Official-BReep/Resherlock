@@ -49,7 +49,7 @@
 
 -------
 
-## Installation
+## Installation and Usage
 
 1. Install [Git](https://git-scm.com/downloads)
 
