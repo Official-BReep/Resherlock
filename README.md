@@ -46,3 +46,16 @@
 + [Wikipedia](https://de.wikipedia.org/) 
 + [YouPorn](https://www.youporn.com/) (NSFW)
 + [Youtube](https://www.youtube.com/) 
+
+-------
+
+## Installation
+
+1. Install [Git](https://git-scm.com/downloads)
+
+2. open cmd and type
+
+   ``git clone https://github.com/Official-BReep/Resherlock.git``
+
+![Git clone preview](https://github.com/Official-BReep/Resherlock/blob/main/assets/git_clone.png)
+
