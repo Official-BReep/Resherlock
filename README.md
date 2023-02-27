@@ -70,8 +70,11 @@
       ``ls``
    + On Windows
      ``dir``
-
+     
 5. Type
+   ``pip install -r requirements.txt``
+
+6. Type
    ``python resherlock -h``
    to get this response
 
