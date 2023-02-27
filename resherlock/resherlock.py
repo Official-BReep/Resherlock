@@ -27,9 +27,12 @@ class ReSherlock:
     def run(self):
         for user in self.settings.target:
             for site in self.data['sites']:
-                print(f"Checking {site['name']}...")
                 check = str(site['usersite']).format(user)
-                status = self.test(check)
+                if site['NSFW'] == "True" and not self.settings.nsfw:
+                    pass
+                else:
+                    print(f"Checking {site['name']}...")
+                    status = self.test(check)
                 if self.settings.print_all:
                     if self.settings.nsfw:
                         self.all.append(f"{site['name']}:  \t{check}(Status code: {status}{',NSFW' if site['NSFW']=='True' else ''})")
