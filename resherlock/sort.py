@@ -1,4 +1,5 @@
 import json
+import os
 
 with open("./resherlock/data/sites.json", "r") as data_file:
     data = json.loads(data_file.read())
@@ -20,3 +21,16 @@ def supported():
         all+=f"{i['name']}  \t  |\t{i['mainsite']}\n"
 
     return all
+
+def genmd():
+    open("supported.md", "w").write("")
+    with open("supported.md", "a+") as supported_file:
+        supported_file.write("## Supported Websites:\n\n")
+        for site in data['sites']:
+            print(f"Write hyperlink for {site['name']} into file")
+            string = f"+ [{site['name']}]({site['mainsite']}) "
+            if site["NSFW"]=="True":
+                string+= "(NSFW)"
+            string+="\n"
+            supported_file.write(string)
+    return "List generated"

@@ -1,4 +1,4 @@
-import json
+import argparse
 from sys import version_info
 from argparse import ArgumentParser
 from resherlock import ReSherlock
@@ -16,10 +16,11 @@ def convert(s):
     # return string
     return new
 
-parser = ArgumentParser(prog="Resherlock", description="What the program does",epilog="Have a lot of Fun with this Tool", exit_on_error=True)
+parser = ArgumentParser(prog="Resherlock",exit_on_error=True)
 parser.add_argument("-o", "--output", help="Write the Output in a text File")
 parser.add_argument("-s", "--supported", action="store_true", help="Get all supported Sites")
-parser.add_argument("-S", "--sort", action="store_true", help="Sort my Database(Development)")
+parser.add_argument("-S", "--sort", action="store_true", help=argparse.SUPPRESS) #Option to sort te Site List
+parser.add_argument("-md", "--genmd", action="store_true", help=argparse.SUPPRESS) #Option to generate the md of supported Sites
 parser.add_argument("-a", "--print_all", action="store_true", help="Get all results(successfull, failed and so on)")
 parser.add_argument("--nsfw", action="store_true", help="Get NSFW results too")
 parser.add_argument("-t", "--target",nargs='+', type=list, help="Set the Target(s)")
@@ -41,3 +42,6 @@ if check:
 
     if args.supported:
         print(supported())
+
+    if args.genmd:
+        print(genmd())

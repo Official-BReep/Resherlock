@@ -85,6 +85,12 @@
             "NSFW": "True"
         },
         {
+            "name": "Ebay",
+            "usersite": "https://www.ebay.de/str/{}",
+            "mainsite": "https://www.ebay.de/",
+            "NSFW": "False"
+        },
+        {
             "name": "Freepik",
             "usersite": "https://www.freepik.com/author/{}",
             "mainsite": "https://www.freepik.com/",
@@ -223,6 +229,12 @@
             "name": "Twitter",
             "usersite": "https://twitter.com/{}",
             "mainsite": "https://twitter.com/home",
+            "NSFW": "False"
+        },
+        {
+            "name": "Wikipedia",
+            "usersite": "https://de.wikipedia.org/wiki/Benutzer:{}",
+            "mainsite": "https://de.wikipedia.org/",
             "NSFW": "False"
         },
         {
