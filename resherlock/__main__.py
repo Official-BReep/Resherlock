@@ -16,7 +16,7 @@ def convert(s):
     # return string
     return new
 
-parser = ArgumentParser(prog="Resherlock",exit_on_error=True)
+parser = ArgumentParser(exit_on_error=True)
 parser.add_argument("-o", "--output", help="Write the Output in a text File")
 parser.add_argument("-s", "--supported", action="store_true", help="Get all supported Sites")
 parser.add_argument("-S", "--sort", action="store_true", help=argparse.SUPPRESS) #Option to sort te Site List

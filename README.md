@@ -53,9 +53,26 @@
 
 1. Install [Git](https://git-scm.com/downloads)
 
-2. open cmd and type
+2. Open cmd and type:
 
    ``git clone https://github.com/Official-BReep/Resherlock.git``
 
-![Git clone preview](https://github.com/Official-BReep/Resherlock/blob/main/assets/git_clone.png)
+   Preview
+
+   ![Git clone preview](https://github.com/Official-BReep/Resherlock/blob/main/assets/git_clone.png)
+3. Type: 
+
+   ``cd Resherlock``
+4. Type:       (Optional)
+
+   + On Linux:
+      ``ls``
+   + On Windows
+     ``dir``
+
+5. Type
+   ``python resherlock -h``
+   to get this response
+
+   ![Show Help preview](https://github.com/Official-BReep/Resherlock/blob/main/assets/show_help.png)
 
