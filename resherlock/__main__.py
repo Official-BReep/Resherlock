@@ -36,22 +36,21 @@ if check:
                 args.target.append(convert(args.target[0]))
                 args.target.pop(0)
 
-            if args.output!=None:
+            if args.output!=None or args.all!=None:
                 if len(args.output)!=len(args.target):
                     pytermcolor.cprint("\nTargets and Output files must have the same length",color="red")
                     sys.exit(1)
-
-            output = ReSherlock(args).run()
-            if args.output!=None:
-                for file in args.output:
-                    print(f"Write {file}")
+            for target in args.target:
+                output = ReSherlock(args, target).run()
+                if args.output!=None:
+                    print(f"Write {target}.txt")
                     for service in output:
                         print(service)
                     print("\n\n")
-            else:
-                for service in output:
-                    print(service)
-                print("\n\n")
+                else:
+                    for service in output:
+                        print(service)
+                    print("\n\n")
 
         elif args.sort:
             print(sort_json())

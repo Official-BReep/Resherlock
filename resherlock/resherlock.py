@@ -6,37 +6,39 @@ from modules.handling import Handler
 
 
 class ReSherlock:
-    def __init__(self, settings):
+    def __init__(self, settings, target):
         self.settings = settings
-        self.output = []
         self.all = []
         self.data = self.get_data()
+        self.target = target
+        self.output = []
 
     def get_data(self):
         with open("./resherlock/data/sites.json", "r") as data:
             return json.loads(data.read())
 
     def run(self):
-        for user in self.settings.target:
-            if self.output != []:
-                self.output = []
-            print(f"Get Data for User {user}\n")
-            for site in self.data['sites']:
-                link = str(site['usersite']).format(user)
-                if site['NSFW'] == "True" and not self.settings.nsfw:
-                    pass
-                else:
-                    print(f"Checking {site['name']}...")
-                status = normal(link)
-                Handler(self.settings, self.all, self.output).handle(site, status, link)
-
-            print("\n\n")
-            if self.settings.print_all:
-                self.output = sorted(list(set(self.all)))
+        print(self.output)
+        if self.output!=[]:
+            self.output = []
+            self.all = []
+        print(f"Get Data for User {self.target}\n")
+        for site in self.data['sites']:
+            link = str(site['usersite']).format(self.target)
+            if site['NSFW'] == "True" and not self.settings.nsfw:
+                pass
             else:
-                self.output = sorted(list(set(self.output)))
+                print(f"Checking {site['name']}...")
+            status = normal(link)
+            Handler(self.settings, self.all, self.output).handle(site, status, link)
 
-            if self.settings.output!=None:
-                for file in self.settings.output:
-                    FileWriter(self.settings, self.output).write_txt(file)
+        print("\n\n")
+        if self.settings.print_all:
+            self.output = sorted(list(set(self.all)))
+        else:
+            self.output = sorted(list(set(self.output)))
+
+        if self.settings.output!=None:
+            position = self.settings.target.index(self.target)
+            FileWriter(self.settings, self.output).write_txt(self.settings.output[position])
         return self.output
