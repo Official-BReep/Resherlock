@@ -2,6 +2,8 @@
  Own and maybe better Version then Sherlock
 
 -----------------------------
+⚠ Bug in Multi Targets function ⚠
+-----------------------------
 
 ## Supported Websites:
 
