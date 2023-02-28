@@ -18,7 +18,6 @@ class ReSherlock:
             return json.loads(data.read())
 
     def run(self):
-        print(self.output)
         if self.output!=[]:
             self.output = []
             self.all = []
