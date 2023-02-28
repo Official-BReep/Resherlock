@@ -1,8 +1,8 @@
 import json
-import os
 
-import httpx
-import more_termcolor
+from modules.request import normal
+from modules.write_file import FileWriter
+from modules.handling import Handler
 
 
 class ReSherlock:
@@ -16,51 +16,27 @@ class ReSherlock:
         with open("./resherlock/data/sites.json", "r") as data:
             return json.loads(data.read())
 
-    def test(self, url):
-            response = httpx.get(url)
-            if "codechef" in url:
-                if "The username specified does not exist in our database" in str(response.content):
-                    return False
-            return response.status_code  # To print http response code
-
-
     def run(self):
         for user in self.settings.target:
+            if self.output != []:
+                self.output = []
+            print(f"Get Data for User {user}\n")
             for site in self.data['sites']:
-                check = str(site['usersite']).format(user)
+                link = str(site['usersite']).format(user)
                 if site['NSFW'] == "True" and not self.settings.nsfw:
                     pass
                 else:
                     print(f"Checking {site['name']}...")
-                    status = self.test(check)
-                if self.settings.print_all:
-                    if self.settings.nsfw:
-                        self.all.append(f"{site['name']}:  \t{check}(Status code: {status}{',NSFW' if site['NSFW']=='True' else ''})")
-                    if not self.settings.nsfw:
-                        if site['NSFW'] == "False":
-                            self.all.append(f"{site['name']}:  \t{check}(Status code: {status})")
-                else:
-                    if status==200:
-                        if not self.settings.nsfw:
-                            if site['NSFW'] == "False":
-                                self.output.append(f"{site['name']}:  \t{check}")
-                        else:
-                            self.output.append(f"{site['name']}:  \t{check}")
+                status = normal(link)
+                Handler(self.settings, self.all, self.output).handle(site, status, link)
 
-        print("\n\n")
-        if self.settings.print_all:
-            self.output = sorted(list(set(self.all)))
-        else:
-            self.output = sorted(list(set(self.output)))
+            print("\n\n")
+            if self.settings.print_all:
+                self.output = sorted(list(set(self.all)))
+            else:
+                self.output = sorted(list(set(self.output)))
 
-        if self.settings.output!=None:
-            self.write_output()
+            if self.settings.output!=None:
+                for file in self.settings.output:
+                    FileWriter(self.settings, self.output).write_txt(file)
         return self.output
-
-    def write_output(self,):
-        file = self.settings.output
-        if os.path.exists(file):
-            os.remove(file)
-        with open(file, "a+") as output_file:
-            for line in self.output:
-                output_file.write(line+"\n")
